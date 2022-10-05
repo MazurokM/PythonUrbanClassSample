@@ -1,0 +1,45 @@
+class Cheese:
+  def __init__(self, expiration_date: int, holes: int, weight: int):
+    """
+    Создание и подготовка к работе объекта "Сыр"
+    :param expiration_date: Срок годности
+		:param holes: Колличество дырок в сыре
+    :param weight: Масса сыра
+    """
+
+    self.expiration_date = expiration_date
+    self.holes = holes
+    self.weight = weight
+
+  def is_cheese(self) -> bool:
+    """
+		Проверка заданных параметров сыра.
+
+    Аргументы "Колличество дырок в сыре", "Масса сыра" должны быть положительными числами.
+
+    :retern: Является ли объект зданием
+		"""
+    ...
+  def expiration_date_check(self) -> bool:
+    """
+		Проверка истечения срока годности сыра.
+
+    Если "Срок годности" отрицательное число,
+    то возвращается "продук нельзя употреблять"
+
+    :param expiration_date: Срок годности
+    :retern: Истек ли срок годности
+		"""
+    ...
+
+  def cut_a_piece(self) -> int:
+    """
+		Отрезаем кусок от сыра.
+
+    Если масса отрезаемого куска больше массы самого сыра,
+    то возвращается "ошибка"
+
+    :param weight: Масса сыра
+    :retern: Масса сыра после отрезания куска
+		"""
+    ...
