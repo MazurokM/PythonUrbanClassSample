@@ -1,0 +1,46 @@
+class Bilding:
+  def __init__(self, floors: int, square: int, height: int):
+    """
+    Создание и подготовка к работе объекта "Здание"
+    :param nfloors: Этажность
+		:param square: Площадь
+    :param height: Высота
+		"""
+    self.floors = floors
+    self.square = square
+    self.height = height
+
+  def is_bilding(self) -> bool:
+    """
+		Проверка заданных параметров здания.
+
+    Аргументы "этажность", "площадь", "высота" должны быть положительными числами.
+
+    :retern: Является ли объект зданием
+		"""
+    ...
+
+  def get_construction_volume(self) -> int:
+    """
+		Вычисление строительного объема здания.
+
+    :param square: Площадь
+    :param height: Высота
+
+    :retern: Строительный объем здания
+		"""
+    ...
+
+  def get_height(self) -> int:
+    """
+		Добавления высотности здания.
+
+    :param height: Высота
+
+    :retern: Новое значение высотности здания
+		"""
+    ...
+
+bilding_1 = Bilding(5, 122, 16)
+
+print(bilding_1.floors)
